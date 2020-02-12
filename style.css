@@ -28,6 +28,11 @@ body{
     animation: cloud 20s linear infinite ;
 }
 
+#hinge{
+        animation: hinge 1s ease-in-out alternate infinite ;
+        transform-origin: top;
+        transform-box: fill-box;
+}
 @keyframes cloud-1{
     from{
         transform: translateY(0px);
@@ -62,5 +67,14 @@ body{
     }
     to{
         transform: translateX(-100%);
+    }
+}
+
+@keyframes hinge{
+    from{
+        transform: rotateZ(5deg);
+    }
+    to{
+        transform: rotateZ(-5deg);
     }
 }
