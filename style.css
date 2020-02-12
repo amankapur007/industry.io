@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#building{
+    background-repeat: repeat;
+}
+
+body{
+    text-align: center;
+}
+
+#cloud-1{
+    animation: cloud-1 6s linear infinite ;
+}
+
+#cloud-2{
+    animation: cloud-2 10s linear infinite ;
+}
+
+#car{
+    animation: car-drive 10s linear infinite ;
+
+}
+
+#cloud-0{
+    animation: cloud 20s linear infinite ;
+}
+
+@keyframes cloud-1{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-120px);
+    }
+}
+
+
+@keyframes cloud-2{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-120px);
+    }
+}
+
+@keyframes cloud{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes car-drive{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
